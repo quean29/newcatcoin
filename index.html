@@ -726,7 +726,7 @@
 
 
     <!-- Migration Notice Modal -->
-    <div id="migrationModal">
+    <div id="migrationModal" style="display:none">
         <div class="modal-box">
             <button class="modal-close" onclick="document.getElementById('migrationModal').style.display='none'" aria-label="Close">&times;</button>
 
@@ -771,6 +771,11 @@
     <script src="assets/js/plugins.js"></script>
     <script src="assets/js/ajax-form.js"></script>
     <script src="assets/js/main.js"></script>
+    <script>
+        setTimeout(function() {
+            document.getElementById('migrationModal').style.display = 'flex';
+        }, 2000);
+    </script>
 </body>
 
 
